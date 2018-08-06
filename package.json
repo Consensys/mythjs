@@ -1,0 +1,27 @@
+{
+   "name": "mythjs",
+   "version": "1.0.0",
+   "description": "A nodejs wrapper around Mythril.",
+   "bin": {
+      "mythjs": "./bin/mythjs"
+   },
+   "bugs": {
+      "url": "https://github.com/consensys/mythjs/issues"
+   },
+   "dependencies": {
+      "remix-lib": ">=0.3.0",
+      "solc": "^0.4.24",
+      "truffle": ">=4.1.13"
+   },
+   "directories": {
+      "bin": "./bin",
+      "test": "./test"
+   },
+   "engines": {
+      "node": ">=0.10.0"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/consensys/mythjs"
+   }
+}
