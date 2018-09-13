@@ -1,3 +1,4 @@
+// Tests  Mythril JSON output issue parsing
 mythlib = require("../lib/mythlib.js")
 var test = {
     "error": null,
@@ -9,4 +10,4 @@ var test = {
 	 "description": "A possible integer overflow exists in the function `run(uint256)`.\nThe addition or multiplication may result in a value higher than the maximum representable integer.", "filename": "/home/rocky/truffle/IntegerOverflow/contracts/IntegerOverflow.sol", "function": "run(uint256)", "lineno": 7, "title": "Integer Overflow", "type": "Warning"}
     ],
     "success": true};
-mythlib.parse_mythril_output(test);
+mythlib.parse_mythril_issue(test.issues[0]);
