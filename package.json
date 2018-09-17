@@ -1,17 +1,39 @@
 {
    "name": "mythjs",
    "version": "1.0.0",
-   "description": "A nodejs wrapper around Mythril.",
+   "description": "Adds 'truffle analyze to truffle to run the Mythril Platform API. See https://truffleframework.com/ and https://mythril.ai/",
    "bin": {
       "mythjs": "./bin/mythjs"
    },
+  "scripts": {
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "test": "npm run lint && mocha --reporter spec --recursive"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "author": "Rocky Bernstein <rocky@consensys.net>",
+  "license": "MIT",
    "bugs": {
       "url": "https://github.com/consensys/mythjs/issues"
    },
+  "homepage": "https://github.com/consensys/mythjs#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "nock": "^9.6.1",
+    "sinon": "^6.1.5",
+    "standard": "^11.0.1"
+  },
    "dependencies": {
+      "armlet": ">=0.1.8",
       "remix-lib": ">=0.3.0",
       "solc": "^0.4.24",
-      "truffle": ">=4.1.13"
+      "truffle": "^4.1.13"
    },
    "directories": {
       "bin": "./bin",
